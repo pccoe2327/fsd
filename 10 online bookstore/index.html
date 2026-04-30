@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookStore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔷 Navbar -->
+<nav class="navbar navbar-dark gradient-nav">
+  <div class="container">
+    <span class="navbar-brand fw-bold">BookStore 📚</span>
+
+    <div>
+      <button class="btn btn-light btn-sm">Fiction</button>
+      <button class="btn btn-light btn-sm">Non-Fiction</button>
+      <button class="btn btn-light btn-sm">Academic</button>
+    </div>
+  </div>
+</nav>
+
+<!-- 🔷 Hero -->
+<section class="hero text-center text-white">
+  <h1>Discover Your Next Book</h1>
+  <p>Best sellers at best prices</p>
+</section>
+
+<!-- 🔷 MAIN LAYOUT -->
+<div class="container-fluid mt-4">
+  <div class="row">
+
+    <!-- 🔷 BOOKS (LEFT) -->
+    <div class="col-lg-9">
+      <div class="row g-4 px-3">
+
+        <!-- Book 1 -->
+        <div class="col-md-4">
+          <div class="card book-card">
+            <div class="book-img">Fiction</div>
+
+            <div class="card-body text-center">
+              <h5>The Alchemist</h5>
+              <p class="text-muted">₹499</p>
+              <button class="btn btn-dark"
+                onclick="addToCart('The Alchemist', 499)">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="col-md-4">
+          <div class="card book-card">
+            <div class="book-img">Non-Fiction</div>
+
+            <div class="card-body text-center">
+              <h5>Atomic Habits</h5>
+              <p class="text-muted">₹699</p>
+              <button class="btn btn-dark"
+                onclick="addToCart('Atomic Habits', 699)">Add</button>
+            </div>
+          </div>
+        </div>
+
+         <!-- Book 2 -->
+        <div class="col-md-4">
+          <div class="card book-card">
+            <div class="book-img">Non-Fiction</div>
+
+            <div class="card-body text-center">
+              <h5>Atomic Habits</h5>
+              <p class="text-muted">₹699</p>
+              <button class="btn btn-dark"
+                onclick="addToCart('Atomic Habits', 699)">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="col-md-4">
+          <div class="card book-card">
+            <div class="book-img">Academic</div>
+
+            <div class="card-body text-center">
+              <h5>Data Structures</h5>
+              <p class="text-muted">₹899</p>
+              <button class="btn btn-dark"
+                onclick="addToCart('Data Structures', 899)">Add</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+
+    <!-- 🔷 CART (RIGHT SIDE) -->
+    <div class="col-lg-3">
+      <div class="cart-box">
+        <h4>🛒 Cart</h4>
+        <div id="cart"></div>
+        <hr>
+        <h5>Total: ₹<span id="total">0</span></h5>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 🔷 Footer -->
+<footer class="footer text-white text-center mt-5">
+  <p>© 2026 BookStore</p>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

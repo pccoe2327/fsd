@@ -1,0 +1,46 @@
+body {
+  background: #f5f7fa;
+  font-family: 'Segoe UI';
+}
+
+.movie-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.movie-img {
+  height: 150px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  gap: 10px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background: green;
+  color: white;
+}
+
+.summary {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}

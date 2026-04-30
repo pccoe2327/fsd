@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔷 Navbar -->
+<nav class="navbar navbar-dark gradient-nav">
+  <div class="container">
+    <span class="navbar-brand fw-bold">FoodStore 🍔</span>
+
+    <div>
+      <button class="btn btn-light btn-sm" onclick="filterItems('All')">All</button>
+      <button class="btn btn-light btn-sm" onclick="filterItems('Snacks')">Snacks</button>
+      <button class="btn btn-light btn-sm" onclick="filterItems('Meals')">Meals</button>
+      <button class="btn btn-light btn-sm" onclick="filterItems('Beverages')">Beverages</button>
+    </div>
+  </div>
+</nav>
+
+<!-- 🔷 MAIN -->
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- LEFT: ITEMS -->
+    <div class="col-lg-9">
+      <div class="row g-4">
+
+        <!-- SNACKS -->
+        <div class="col-md-4 item Snacks">
+          <div class="card product-card">
+            <div class="product-img">Snacks</div>
+            <div class="card-body text-center">
+              <h5>Burger</h5>
+              <p class="price">₹199</p>
+              <button onclick="addToCart('Burger',199)" class="btn btn-dark btn-sm">Add</button>
+              <button onclick="removeFromCart(199)" class="btn btn-danger btn-sm">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 item Snacks">
+          <div class="card product-card">
+            <div class="product-img">Snacks</div>
+            <div class="card-body text-center">
+              <h5>Fries</h5>
+              <p class="price">₹99</p>
+              <button onclick="addToCart('Fries',99)" class="btn btn-dark btn-sm">Add</button>
+              <button onclick="removeFromCart(99)" class="btn btn-danger btn-sm">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- MEALS -->
+        <div class="col-md-4 item Meals">
+          <div class="card product-card">
+            <div class="product-img">Meals</div>
+            <div class="card-body text-center">
+              <h5>Pizza</h5>
+              <p class="price">₹299</p>
+              <button onclick="addToCart('Pizza',299)" class="btn btn-dark btn-sm">Add</button>
+              <button onclick="removeFromCart(299)" class="btn btn-danger btn-sm">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 item Meals">
+          <div class="card product-card">
+            <div class="product-img">Meals</div>
+            <div class="card-body text-center">
+              <h5>Biryani</h5>
+              <p class="price">₹349</p>
+              <button onclick="addToCart('Biryani',349)" class="btn btn-dark btn-sm">Add</button>
+              <button onclick="removeFromCart(349)" class="btn btn-danger btn-sm">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEVERAGES -->
+        <div class="col-md-4 item Beverages">
+          <div class="card product-card">
+            <div class="product-img">Beverages</div>
+            <div class="card-body text-center">
+              <h5>Juice</h5>
+              <p class="price">₹99</p>
+              <button onclick="addToCart('Juice',99)" class="btn btn-dark btn-sm">Add</button>
+              <button onclick="removeFromCart(99)" class="btn btn-danger btn-sm">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 item Beverages">
+          <div class="card product-card">
+            <div class="product-img">Beverages</div>
+            <div class="card-body text-center">
+              <h5>Coffee</h5>
+              <p class="price">₹129</p>
+              <button onclick="addToCart('Coffee',129)" class="btn btn-dark btn-sm">Add</button>
+              <button onclick="removeFromCart(129)" class="btn btn-danger btn-sm">Remove</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT: CART -->
+    <div class="col-lg-3">
+      <div class="cart-box">
+        <h5>🛒 Cart</h5>
+        <div id="cart"></div>
+        <hr>
+        <p>Total: ₹<span id="total">0</span></p>
+        <button class="btn btn-success w-100">Checkout</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

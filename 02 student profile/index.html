@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+        }
+
+        .section {
+            margin-top: 25px;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1><u>Student Profile</u></h1>
+
+    <!-- Personal Details -->
+    <div class="section">
+        <h2>👤 Personal Details</h2>
+        <img src="photo.jpg" width="150" height="150">
+
+        <p><b>Name:</b> Bean</p>
+        <p><b>Bio:</b> <i>A passionate Computer Engineering student interested in AI, web development, and innovative projects.</i></p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2>🎓 Educational Qualifications</h2>
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institute</th>
+                <th>Year</th>
+                <th>Percentage</th>
+            </tr>
+
+            <tr>
+                <td>B.Tech (Computer Engineering)</td>
+                <td>PCCoE</td>
+                <td>2023-2027</td>
+                <td>--</td>
+            </tr>
+
+            <tr>
+                <td>HSC</td>
+                <td>XYZ College</td>
+                <td>2023</td>
+                <td>85%</td>
+            </tr>
+
+            <tr>
+                <td>SSC</td>
+                <td>XYZ School</td>
+                <td>2021</td>
+                <td>90%</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="section">
+        <h2>🎯 Hobbies & Interests</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Artificial Intelligence</li>
+            <li>Reading Tech Blogs</li>
+            <li>Gaming</li>
+        </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+        <h2>📞 Contact Information</h2>
+        <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">Visit Profile</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  font-family: 'Segoe UI';
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* Service cards */
+.service-card {
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}

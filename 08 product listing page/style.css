@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI';
+  background: #f0f4ff;
+}
+
+/* Navbar */
+.gradient-nav {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* Hero */
+.hero-banner {
+  height: 40vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* Filter buttons */
+.filter-btn {
+  margin: 5px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #333;
+  color: white;
+}
+
+/* Product cards */
+.product-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Buy button */
+.btn-buy {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  border-radius: 20px;
+}
+
+.btn-buy:hover {
+  opacity: 0.8;
+}
+
+/* Price */
+.price {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 20px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fashion Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔷 Navbar -->
+<nav class="navbar navbar-dark gradient-nav">
+  <div class="container">
+    <span class="navbar-brand fw-bold">FashionX</span>
+    <span class="text-white">Total: ₹<span id="total">0</span></span>
+  </div>
+</nav>
+
+<!-- 🔷 Hero -->
+<section class="hero text-center text-white">
+  <h1>🔥 Summer Sale</h1>
+  <p>Flat 50% OFF</p>
+</section>
+
+<!-- 🔷 Categories -->
+<div class="container text-center my-4">
+  <button class="btn filter-btn">All</button>
+  <button class="btn filter-btn">Men</button>
+  <button class="btn filter-btn">Women</button>
+</div>
+
+<!-- 🔷 MAIN LAYOUT -->
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- 🔷 Products (LEFT) -->
+    <div class="col-lg-9">
+      <div class="row g-4 px-3">
+
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <div class="product-img">Shirt</div>
+
+            <div class="card-body text-center">
+              <h5>Casual Shirt</h5>
+              <p class="price">₹999</p>
+              <button class="btn btn-dark" onclick="addToCart('Shirt', 999)">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <div class="product-img">Shoes</div>
+
+            <div class="card-body text-center">
+              <h5>Sneakers</h5>
+              <p class="price">₹1999</p>
+              <button class="btn btn-dark" onclick="addToCart('Sneakers', 1999)">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <div class="product-img">Bag</div>
+
+            <div class="card-body text-center">
+              <h5>Backpack</h5>
+              <p class="price">₹799</p>
+              <button class="btn btn-dark" onclick="addToCart('Bag', 799)">Add</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 🔷 CART (RIGHT SIDE) -->
+    <div class="col-lg-3">
+      <div class="cart-box">
+        <h4>🛒 Cart</h4>
+        <div id="cart"></div>
+        <hr>
+        <h5>Total: ₹<span id="cartTotal">0</span></h5>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 🔷 Footer -->
+<footer class="footer text-center text-white mt-5">
+  <p>© 2026 FashionX</p>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

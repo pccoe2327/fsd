@@ -1,0 +1,105 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+header{
+    background:darkblue;
+    color:white;
+    text-align:center;
+}
+
+.filter-box{
+    border-radius:10px;
+}
+
+select{
+    padding:8px;
+    width:200px;
+}
+
+.dashboard-card{
+    background:white;
+    width:85%;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 4px 8px gray;
+    border:none;
+}
+
+.dashboard-card h2{
+    text-align:center;
+}
+
+.chart{
+    height:250px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    gap:15px;
+}
+
+.line-bar{
+    width:45px;
+    background:green;
+    color:white;
+    text-align:center;
+}
+
+.bar{
+    width:50px;
+    background:blue;
+    color:white;
+    text-align:center;
+}
+
+.pie-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.pie{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+}
+
+.legend p{
+    margin:10px 0;
+}
+
+.electronics{
+    background:red;
+}
+
+.clothing{
+    background:orange;
+}
+
+.grocery{
+    background:green;
+}
+
+.box{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-right:10px;
+}
+
+@media(max-width:768px){
+    .dashboard-card{
+        width:95%;
+    }
+
+    .bar,
+    .line-bar{
+        width:35px;
+        font-size:12px;
+    }
+}
